@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AgentSimulation" />
+        <module name="AutomaticParallelism" />
+        <module name="CombinedSimulation" />
+        <module name="ElectricalDeviceSimulation" />
+        <module name="ElectricalDeviceSimulationModels" />
+        <module name="UtilityLibrary" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AgentSimulation" target="1.8" />
+      <module name="AutomaticParallelism" target="1.8" />
+      <module name="CombinedSimulation" target="1.8" />
+      <module name="ElectricalDeviceSimulation" target="1.8" />
+      <module name="ElectricalDeviceSimulationModels" target="1.8" />
+      <module name="SmartGridSimulation" target="1.5" />
+      <module name="UtilityLibrary" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

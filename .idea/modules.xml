@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AgentSimulation/AgentSimulation.iml" filepath="$PROJECT_DIR$/AgentSimulation/AgentSimulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AutomaticParallelism/AutomaticParallelism.iml" filepath="$PROJECT_DIR$/AutomaticParallelism/AutomaticParallelism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CombinedSimulation/CombinedSimulation.iml" filepath="$PROJECT_DIR$/CombinedSimulation/CombinedSimulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ElectricalDeviceSimulation/ElectricalDeviceSimulation.iml" filepath="$PROJECT_DIR$/ElectricalDeviceSimulation/ElectricalDeviceSimulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ElectricalDeviceSimulationModels/ElectricalDeviceSimulationModels.iml" filepath="$PROJECT_DIR$/ElectricalDeviceSimulationModels/ElectricalDeviceSimulationModels.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartGridSimulation.iml" filepath="$PROJECT_DIR$/SmartGridSimulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UtilityLibrary/UtilityLibrary.iml" filepath="$PROJECT_DIR$/UtilityLibrary/UtilityLibrary.iml" />
+    </modules>
+  </component>
+</project>
