@@ -155,7 +155,7 @@ public class MeasurableItemCollector implements Visualizable, SimulationChangeLi
             BufferedWriter bw = new BufferedWriter(new FileWriter(f));
 
             for (Measurement value : dataset) {
-                bw.write(value.data.toString() + "," + value.time.toString() + "\n");
+                bw.write(value.data.toString() + "," + value.time.toString("yyyy-MMM-dd HH:mm:ss") + "\n");
             }
             bw.close();
             System.out.println("File " + filename + " written under " + f.getCanonicalPath());
