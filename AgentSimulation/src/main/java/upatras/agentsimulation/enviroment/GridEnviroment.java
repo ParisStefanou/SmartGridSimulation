@@ -5,47 +5,47 @@
  */
 package upatras.agentsimulation.enviroment;
 
+import org.joda.time.DateTime;
 import upatras.agentsimulation.main.AgentSimulationInstance;
 import upatras.agentsimulation.visualization.GridVisualizationJPanel;
 import upatras.agentsimulation.visualization.SquareVisualizer;
 import upatras.utilitylibrary.library.visualization.Visualizable;
 
 import javax.swing.*;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
- * @author Paris
  * @param <T> The type of Objects this grid will contain
+ * @author Paris
  */
 public class GridEnviroment<T> extends AbstractAgentEnvironment implements Visualizable {
 
     /**
      * Width of the grid
-     *
      */
     final public int width;
 
     /**
      * Height of the grid
-     *
      */
     final public int height;
     Class<T> type;
 
     /**
      * Objects array of the grid
-     *
      */
     public Object[][] items;
+
+    ArrayList<GridVisualizationJPanel> panels_to_update = new ArrayList<>();
 
     /**
      * A GridEnviroment is a representation of two dimensional space with
      * discrete locations
      *
-     * @param asi AgentSimulationInstance to use for event notifications
-     * @param width Width of the grid
+     * @param asi    AgentSimulationInstance to use for event notifications
+     * @param width  Width of the grid
      * @param height Height of the grid
      */
     public GridEnviroment(AgentSimulationInstance asi, int width, int height) {
@@ -62,10 +62,33 @@ public class GridEnviroment<T> extends AbstractAgentEnvironment implements Visua
      * @param y
      * @param object
      */
-    public void put(int x, int y, T object) {
+    public void put(int x, int y, T object, DateTime datetime) {
 
         items[x][y] = object;
+        for (GridVisualizationJPanel panel : panels_to_update) {
+            if (panel != null) {
+                panel.itemchanged(datetime);
+            }
+        }
+    }
 
+    /**
+     * Remove and get an object from a specific grid location
+     *
+     * @param x
+     * @param y
+     */
+    public T pop(int x, int y, DateTime datetime) {
+
+
+        T toreturn = (T) items[x][y];
+        items[x][y] = null;
+        for (GridVisualizationJPanel panel : panels_to_update) {
+            if (panel != null) {
+                panel.itemchanged(datetime);
+            }
+        }
+        return toreturn;
     }
 
     /**
@@ -96,7 +119,8 @@ public class GridEnviroment<T> extends AbstractAgentEnvironment implements Visua
 
     SquareVisualizer square_visualizer = null;
 
-    /**Adds a SquareVisualizer thats needed when visualization is called
+    /**
+     * Adds a SquareVisualizer thats needed when visualization is called
      *
      * @param square_visualizer the SquareVisualizer that translates squares into a color
      */
@@ -113,18 +137,21 @@ public class GridEnviroment<T> extends AbstractAgentEnvironment implements Visua
                 Logger.getLogger(GridEnviroment.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-        return new GridVisualizationJPanel(this, square_visualizer);
+
+        GridVisualizationJPanel to_return = new GridVisualizationJPanel(this, square_visualizer);
+        panels_to_update.add(to_return);
+        return to_return;
 
     }
 
-	@Override
-	public JFrame compressedVisualize() {
-		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-	}
+    @Override
+    public JFrame compressedVisualize() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-	@Override
-	public JPanel getCompressedPanel() {
-		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-	}
+    @Override
+    public JPanel getCompressedPanel() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a82daf83-96dc-4f21-bc15-93896f8e860d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UtilityLibrary/src/main/java/upatras/utilitylibrary/library/dataextraction/MeasurableItemCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/UtilityLibrary/src/main/java/upatras/utilitylibrary/library/dataextraction/MeasurableItemCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/enviroment/GridEnviroment.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/enviroment/GridEnviroment.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/AgentSimulation/target/" />
     <ignored path="$PROJECT_DIR$/AutomaticParallelism/target/" />
@@ -26,40 +26,40 @@
     <session id="790044139">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="68" />
+          <entry key="java" value="73" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="68" />
+          <entry key="JAVA" value="73" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2834" />
+          <entry key="java" value="3059" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2834" />
+          <entry key="JAVA" value="3059" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -67,42 +67,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/event/EventResolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/event/priorityqueue/BucketRBTreeCheck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/event/priorityqueue/BucketRBTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ElectricalDeviceSimulation/src/main/java/upatras/electricaldevicesimulation/simulationcore/DeviceBase/AbstractSimulatableDevice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CombinedSimulation/src/main/java/upatras/combinedsimulation/EnviromentalVariableUpdateEvent.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,17 +88,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CombinedSimulation/src/main/java/upatras/combinedsimulation/SmartGridInstance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
+            <state relative-caret-position="176">
               <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UtilityLibrary/src/main/java/upatras/utilitylibrary/library/dataextraction/MeasurableItemCollector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="2860">
               <caret line="157" column="82" selection-start-line="157" selection-start-column="82" selection-end-line="157" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ElectricalDeviceSimulationModels/src/main/java/upatras/simulationmodels/devices/basic/SimpleLoad.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ElectricalDeviceSimulationModels/src/main/java/upatras/simulationmodels/devices/basic/VariableRampGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/enviroment/GridEnviroment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-727">
+              <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -205,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CombinedSimulation/src/main/java/upatras/combinedsimulation/SmartGridInstance.java" />
         <option value="$PROJECT_DIR$/ElectricalDeviceSimulation/src/main/java/upatras/electricaldevicesimulation/simulationcore/DeviceBase/AbstractSimulatableDevice.java" />
         <option value="$PROJECT_DIR$/ElectricalDeviceSimulationModels/src/test/java/upatras/simulationmodels/devices/PowerPlantTest.java" />
         <option value="$PROJECT_DIR$/ElectricalDeviceSimulationModels/src/main/java/upatras/simulationmodels/devices/PowerPlant.java" />
@@ -256,6 +246,7 @@
         <option value="$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/event/priorityqueue/BucketRBTree.java" />
         <option value="$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/event/priorityqueue/WindowedRedBlackTreeCheck.java" />
         <option value="$PROJECT_DIR$/UtilityLibrary/src/main/java/upatras/utilitylibrary/library/dataextraction/MeasurableItemCollector.java" />
+        <option value="$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/enviroment/GridEnviroment.java" />
       </list>
     </option>
   </component>
@@ -273,8 +264,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="359" />
-    <option name="y" value="59" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1696" />
     <option name="height" value="1026" />
   </component>
@@ -285,7 +276,6 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -293,20 +283,82 @@
               <item name="SmartGridSimulation" type="b2602c69:ProjectViewProjectNode" />
               <item name="SmartGridSimulation" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SmartGridSimulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartGridSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="AgentSimulation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartGridSimulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartGridSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="AgentSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartGridSimulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartGridSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="AgentSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartGridSimulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartGridSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="AgentSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartGridSimulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartGridSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="AgentSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="enviroment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartGridSimulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartGridSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="ElectricalDeviceSimulationModels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartGridSimulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartGridSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="ElectricalDeviceSimulationModels" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartGridSimulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartGridSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="ElectricalDeviceSimulationModels" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartGridSimulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartGridSimulation" type="462c0819:PsiDirectoryNode" />
+              <item name="ElectricalDeviceSimulationModels" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537129596364" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537485490309" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SmartCitySimulation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test implementations/SheepWolves" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3685662" />
@@ -537,7 +589,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3107275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3218249" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -612,41 +664,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/UtilityLibrary/src/main/java/upatras/utilitylibrary/library/test/PrecisionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UtilityLibrary/src/main/java/upatras/utilitylibrary/library/measurements/units/electrical/ComplexPower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/concurrent/ExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="136" column="17" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AutomaticParallelism/src/main/java/upatras/automaticparallelism/execution/dag/DagExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AutomaticParallelism/src/test/java/upatras/automaticparallelism/execution/dag/DagExecutorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UtilityLibrary/src/main/java/upatras/utilitylibrary/library/test/PlotDistribution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -704,12 +721,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/event/TimeEvent.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -936,6 +953,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CombinedSimulation/src/main/java/upatras/combinedsimulation/SmartGridInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UtilityLibrary/src/main/java/upatras/utilitylibrary/library/dataextraction/MeasurableItemCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2860">
+          <caret line="157" column="82" selection-start-line="157" selection-start-column="82" selection-end-line="157" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ElectricalDeviceSimulationModels/src/main/java/upatras/simulationmodels/devices/basic/SimpleLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="20" selection-start-line="20" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/event/Event.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -950,17 +988,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CombinedSimulation/src/main/java/upatras/combinedsimulation/SmartGridInstance.java">
+    <entry file="file://$PROJECT_DIR$/ElectricalDeviceSimulationModels/src/main/java/upatras/simulationmodels/devices/basic/VariableRampGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="198">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UtilityLibrary/src/main/java/upatras/utilitylibrary/library/dataextraction/MeasurableItemCollector.java">
+    <entry file="file://$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/visualization/SquareVisualizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="157" column="82" selection-start-line="157" selection-start-column="82" selection-end-line="157" selection-end-column="82" />
+        <state relative-caret-position="220">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/visualization/GridVisualizationJPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+          <folding>
+            <element signature="e#1946#1947#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AgentSimulation/src/main/java/upatras/agentsimulation/enviroment/GridEnviroment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-727">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
         </state>
       </provider>
     </entry>
