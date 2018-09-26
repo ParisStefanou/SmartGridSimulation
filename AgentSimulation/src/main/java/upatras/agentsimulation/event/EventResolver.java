@@ -119,20 +119,18 @@ public class EventResolver implements Visualizable {
         }
 
         if (!rb_mode) {
-            OrderableEvent next_event = event_list.remove();
-
+            OrderableEvent<AbstractAgent,AbstractAgent> next_event = event_list.remove();
 
             TimeStep simulation_step;
-            if (next_event.event_time != null)
+            if (next_event.event_time != null && next_event.event_time.isAfter(asi.getPresent()))
                 simulation_step = new TimeStep(asi.getPresent(), next_event.event_time);
             else {
                 simulation_step = new TimeStep(asi.getPresent(), asi.getPresent());
             }
 
-
             if (!next_event.targets.isEmpty()) {
                 if (debug) {
-                    System.out.println("Resolving event normally: " + next_event);
+                    System.out.println("Resolving event: " + next_event);
                 }
                 Batch b = new Batch();
                 erg.addEvent(next_event);
@@ -151,7 +149,7 @@ public class EventResolver implements Visualizable {
 
             } else {
                 if (debug) {
-                    System.out.println("Resolving event normally: " + next_event + " but the targets were empty");
+                    System.out.println("Cannot resolve event : " + next_event + ", the targets were empty");
                 }
             }
             asi.setPresent(simulation_step.step_end);
@@ -164,7 +162,7 @@ public class EventResolver implements Visualizable {
 
             TimeStep simulation_step = new TimeStep(asi.getPresent(), bucket.middle_time);
 
-            for (TimeEvent next_event : bucket) {
+            for (TimeEvent<AbstractAgent,AbstractAgent> next_event : bucket) {
 
 
                 if (!next_event.targets.isEmpty()) {

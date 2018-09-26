@@ -13,7 +13,7 @@ import upatras.agentsimulation.agent.Population;
  *
  * @author Paris
  */
-public abstract class Event {
+public abstract class Event<O extends AbstractAgent,T extends AbstractAgent> {
 
 	/**
 	 * The event name should be selected carefully since Agent behaviors are
@@ -35,26 +35,26 @@ public abstract class Event {
 	 * Agent that has started this event
 	 *
 	 */
-	public final AbstractAgent origin;
+	public final O origin;
 
 	/**
 	 * The population this event will be delivered to
 	 *
 	 */
-	public final Population<AbstractAgent> targets;
+	public final Population<T> targets;
 
 	/**
 	 * An event is any change in the simulation that could cause a behavior to
 	 * activate. The name will be automatically generated.
 	 *
 	 * @param origin source of the event
-	 * @param target targets of the event
+	 * @param targets targets of the event
 	 * @param event_time DateTime at which the event occured
 	 */
-	public Event(AbstractAgent origin, Population target, DateTime event_time) {
+	public Event(O origin, Population<T> targets, DateTime event_time) {
 		this.name = getClass().getSimpleName();
 		this.origin = origin;
-		this.targets = target;
+		this.targets = targets;
 		this.event_time = event_time;
 	}
 
@@ -64,13 +64,13 @@ public abstract class Event {
 	 *
 	 * @param name name of the event , to be used to activate behaviors
 	 * @param origin source of the event
-	 * @param target targets of the event
+	 * @param targets targets of the event
 	 * @param event_time DateTime at which the event occured
 	 */
-	public Event(String name, AbstractAgent origin, Population target, DateTime event_time) {
+	public Event(String name, O origin, Population<T> targets, DateTime event_time) {
 		this.name = name;
 		this.origin = origin;
-		this.targets = target;
+		this.targets = targets;
 		this.event_time = event_time;
 	}
 

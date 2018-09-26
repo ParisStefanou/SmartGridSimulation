@@ -28,11 +28,11 @@ import java.util.HashMap;
  */
 public class EventRelationGraph implements Visualizable {
 
-    ArrayList<Event> events = new ArrayList<>();
+    ArrayList<Event<AbstractAgent,AbstractAgent>> events = new ArrayList<>();
     HashMap<String, Boolean> filter = new HashMap<>();
 
     boolean graphchanged = true;
-    public boolean debug = true;
+    public boolean debug = false;
     SparseMultigraph full_graph = new SparseMultigraph();
     SparseMultigraph compressed_graph = new SparseMultigraph();
 
@@ -88,7 +88,7 @@ public class EventRelationGraph implements Visualizable {
 
 
         HashMap<String, AbstractAgent> unique_agents_types = new HashMap<>();
-        for (Event event : events) {
+        for (Event<AbstractAgent,AbstractAgent> event : events) {
             unique_agents_types.put(event.origin.getClass().getSimpleName(), event.origin);
             for (AbstractAgent target_agent : event.targets) {
                 unique_agents_types.put(target_agent.getClass().getSimpleName(), target_agent);
@@ -96,7 +96,7 @@ public class EventRelationGraph implements Visualizable {
         }
 
         HashMap<String, Eventcounter> counted_events = new HashMap<>();
-        for (Event event : events) {
+        for (Event<AbstractAgent,AbstractAgent> event : events) {
             for (AbstractAgent target_agent : event.targets) {
                 String edge_key = event.origin.getClass().getSimpleName() + target_agent.getClass().getSimpleName() + event.name;
                 Eventcounter ec = counted_events.get(edge_key);

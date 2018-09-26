@@ -177,8 +177,10 @@ public abstract class AbstractAgent implements SimulationChangingItem {
                 b.execute(event);
             }
         } else {
-            System.out.println("The agent "
-                    + this + " received the event " + event + " for which it had no attached behaviour");
+            if (debug) {
+                System.out.println("The agent "
+                        + this + " received the event " + event + " for which it had no attached behaviour");
+            }
         }
     }
 

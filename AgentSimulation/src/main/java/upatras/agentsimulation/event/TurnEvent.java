@@ -13,7 +13,7 @@ import upatras.agentsimulation.agent.Population;
 /**
  * @author Paris
  */
-public class TurnEvent extends TimeEvent {
+public class TurnEvent<O extends AbstractAgent,T extends AbstractAgent> extends TimeEvent<O,T> {
 
     public final int turn;
 
@@ -25,8 +25,8 @@ public class TurnEvent extends TimeEvent {
     public static int turntotimemult = 200;
     static final DateTime start = DateTime.now();
 
-    public TurnEvent(AbstractAgent origin, Population target, int turn) {
-        super(origin, target, start.plus(new Duration(turntotimemult * turn)));
+    public TurnEvent(O origin, Population<T> targets, int turn) {
+        super(origin, targets, start.plus(new Duration(turntotimemult * turn)));
         this.turn = turn;
     }
 
@@ -36,11 +36,11 @@ public class TurnEvent extends TimeEvent {
      *
      * @param name   A name based on which behaviors will activate on Agents
      * @param origin Agent causing the event
-     * @param target Population receiving the event
+     * @param targets Population receiving the event
      * @param turn   turn of the simulation
      */
-    public TurnEvent(String name, AbstractAgent origin, Population target, int turn) {
-        super(name, origin, target, start.plus(new Duration(turntotimemult * turn)));
+    public TurnEvent(String name, O origin, Population<T> targets, int turn) {
+        super(name, origin, targets, start.plus(new Duration(turntotimemult * turn)));
         this.turn = turn;
     }
 

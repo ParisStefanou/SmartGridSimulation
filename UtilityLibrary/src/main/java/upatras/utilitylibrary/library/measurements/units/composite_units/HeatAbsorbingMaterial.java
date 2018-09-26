@@ -11,35 +11,31 @@ public class HeatAbsorbingMaterial {
     public final double heat_capacity;
     public final double density;
 
-    public static HeatAbsorbingMaterial air() {
-        return new HeatAbsorbingMaterial(1.0035, 1.15);
-    }
+    public static HeatAbsorbingMaterial air() { return new HeatAbsorbingMaterial(1003.5, 1.15); }
 
-    public static HeatAbsorbingMaterial water() {
-        return new HeatAbsorbingMaterial(4.185, 1000);
-    }
+    public static HeatAbsorbingMaterial water() { return new HeatAbsorbingMaterial(4185, 1000); }
 
     public static HeatAbsorbingMaterial meat() {
-        return new HeatAbsorbingMaterial(1.47, 1487.8);
+        return new HeatAbsorbingMaterial(1470, 1487.8);
     }
 
-    public static HeatAbsorbingMaterial steel() {return new HeatAbsorbingMaterial(0.5, 8050);}
+    public static HeatAbsorbingMaterial steel() { return new HeatAbsorbingMaterial(500, 8050); }
 
     public static HeatAbsorbingMaterial brick() {
-        return new HeatAbsorbingMaterial(0.38, 600);
+        return new HeatAbsorbingMaterial(380, 600);
     }
 
     public static HeatAbsorbingMaterial wood() {
-        return new HeatAbsorbingMaterial(1.76, 700);
+        return new HeatAbsorbingMaterial(1760, 700);
     }
 
 
     /**
-     * @param heat_capacity in joules per gramm
+     * @param heat_capacity in joules per kilgramm
      * @param density       in kilograms per cubic meter
      */
     public HeatAbsorbingMaterial(double heat_capacity, double density) {
-        this.heat_capacity = heat_capacity * 1000.0;
+        this.heat_capacity = heat_capacity;
         this.density = density;
     }
 

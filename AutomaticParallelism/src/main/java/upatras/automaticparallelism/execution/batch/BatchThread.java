@@ -77,62 +77,66 @@ public class BatchThread implements Runnable {
 
     @Override
     public void run() {
-
-        while (true) {
-
-            try {
-                run_barrier.acquire();
-            } catch (InterruptedException ex) {
-                Logger.getLogger(BatchThread.class.getName()).log(Level.SEVERE, null, ex);
-            }
-
-            if (shutdown.get()) {
-                return;
-            }
-
-            VirtualTaskList<Task> taskstoexecute = null;
-
-
+        try {
             while (true) {
 
-                switch (consumption_algorithm) {
-                    case log:
-                        taskstoexecute = to_process_batch.getPercentage(percentage, minimum);
-                        break;
-                    case all:
-                        taskstoexecute = to_process_batch.getAll(threadcount);
-                        break;
-                    case small:
-                        taskstoexecute = to_process_batch.getFlat(10);
-                        break;
+
+                try {
+                    run_barrier.acquire();
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(BatchThread.class.getName()).log(Level.SEVERE, null, ex);
                 }
 
-                if (taskstoexecute == null) {
-                    break;
+                if (shutdown.get()) {
+                    return;
                 }
 
-                for (int i = 0; i < taskstoexecute.getSize(); i++) {
-                    Task t = taskstoexecute.get(i);
-                    try {
-                        switch (runmode) {
-                            case preprocess:
-                                t.preprocess(simulation_Step);
-                                break;
-                            case run:
-                                t.run(simulation_Step);
-                                break;
-                            case postprocess:
-                                t.postprocess(simulation_Step);
-                                break;
+                VirtualTaskList<Task> taskstoexecute = null;
+
+
+                while (true) {
+
+                    switch (consumption_algorithm) {
+                        case log:
+                            taskstoexecute = to_process_batch.getPercentage(percentage, minimum);
+                            break;
+                        case all:
+                            taskstoexecute = to_process_batch.getAll(threadcount);
+                            break;
+                        case small:
+                            taskstoexecute = to_process_batch.getFlat(10);
+                            break;
+                    }
+
+                    if (taskstoexecute == null) {
+                        break;
+                    }
+
+                    for (int i = 0; i < taskstoexecute.getSize(); i++) {
+                        Task t = taskstoexecute.get(i);
+                        try {
+                            switch (runmode) {
+                                case preprocess:
+                                    t.preprocess(simulation_Step);
+                                    break;
+                                case run:
+                                    t.run(simulation_Step);
+                                    break;
+                                case postprocess:
+                                    t.postprocess(simulation_Step);
+                                    break;
+                            }
+                        } catch (Exception ex) {
+                            Logger.getLogger(BatchThread.class.getName()).log(Level.SEVERE, null, ex);
                         }
-                    } catch (Exception ex) {
-                        Logger.getLogger(BatchThread.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
+
+                threadsalive.add(1);
+
             }
-
-            threadsalive.add(1);
-
+        } catch (Exception ex) {
+            System.out.println("A batchthread died with exception: " + ex.toString());
         }
     }
 

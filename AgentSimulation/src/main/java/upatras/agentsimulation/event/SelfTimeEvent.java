@@ -11,13 +11,13 @@ import upatras.agentsimulation.agent.AbstractAgent;
 /**
  * @author Paris
  */
-public class SelfTimeEvent extends TimeEvent {
+public class SelfTimeEvent<O extends AbstractAgent> extends TimeEvent<O,O> {
 
-    public SelfTimeEvent(AbstractAgent origin, DateTime event_time) {
+    public SelfTimeEvent(O origin, DateTime event_time) {
         super(origin, origin.toPopulation(), event_time);
     }
 
-    public SelfTimeEvent(String name, AbstractAgent origin, DateTime event_time) {
+    public SelfTimeEvent(String name, O origin, DateTime event_time) {
         super(name, origin, origin.toPopulation(), event_time);
     }
 

@@ -13,19 +13,19 @@ import upatras.agentsimulation.agent.Population;
  *
  * @author Paris
  */
-public class TimeEvent extends OrderableEvent {
+public class TimeEvent<O extends AbstractAgent,T extends AbstractAgent> extends OrderableEvent<O,T> {
 
 	/**
 	 * A TimeEvent should be used when the simulations is taking place in real
 	 * time
 	 *
 	 * @param origin Agent causing the event
-	 * @param target Agent receiving the event
+	 * @param targets Agent population receiving the event
 	 * @param event_time timestamp of the event occurance
 	 */
 
-	public TimeEvent(AbstractAgent origin, Population target, DateTime event_time) {
-		super(origin, target, event_time);
+	public TimeEvent(O origin, Population<T> targets, DateTime event_time) {
+		super(origin, targets, event_time);
 	}
 
 	/**
@@ -34,11 +34,11 @@ public class TimeEvent extends OrderableEvent {
 	 *
 	 * @param name A name based on which behaviors will activate on Agents
 	 * @param origin Agent causing the event
-	 * @param target Agent receiving the event
+	 * @param targets Agent population receiving the event
 	 * @param event_time timestamp of the event occurance
 	 */
-	public TimeEvent(String name, AbstractAgent origin, Population target, DateTime event_time) {
-		super(name, origin, target, event_time);
+	public TimeEvent(String name, O origin, Population<T> targets, DateTime event_time) {
+		super(name, origin, targets, event_time);
 	}
 
 	@Override
